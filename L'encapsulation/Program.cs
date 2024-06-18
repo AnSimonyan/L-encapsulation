@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            BeerEncapsulator beerMaker = new BeerEncapsulator(10, 10);
+            beerMaker.AddBeer(350);
+            Console.WriteLine( beerMaker.ProduceEncapsulatedBeerBottles(11));
+
         }
     }
 }
